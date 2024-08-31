@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+    background: linear-gradient(to right, #a6cde1, #11587b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    border: 10px solid rgb(8, 60, 78);
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 20px 15px 20px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(5, 5, 5, 0.2);
+
+}
+
+h1 {
+    color: rgb(11, 58, 102);
+    text-align: center;
+    font-size: 40px;
+}
+
+.digit {
+    font-size: 120px;
+    color: #fff;
+}
+
+.txt {
+    font-size: 30px;
+    color: #06267d;
+}
+
+#buttons {
+    margin-top: 50px;
+}
+
+.btn {
+    width: 100px;
+    padding: 10px 15px;
+    margin: 0px 20px;
+    border: 2px solid #252525;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    background-color: transparent;
+}
+
+
+
+.reset::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #c91400;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  .reset:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+  .start::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #009779;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  .start:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+  .stop::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #0e85fc;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  .stop:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  .btn:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
+
